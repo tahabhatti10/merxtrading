@@ -31,6 +31,23 @@ export default defineConfig({
             cpSync(src, dest, { recursive: true, force: true });
           }
         });
+
+        // Copy font files to dist/assets and dist/webfonts as fallback for relative css urls
+        const distAssets = resolve(__dirname, 'dist', 'assets');
+        const distWebfonts = resolve(__dirname, 'dist', 'webfonts');
+
+        const fontSources = [
+          resolve(__dirname, 'wp-content', 'themes', 'dt-the7', 'fonts', 'icomoon-the7-font'),
+          resolve(__dirname, 'wp-content', 'themes', 'dt-the7', 'fonts', 'FontAwesome', 'webfonts'),
+          resolve(__dirname, 'wp-content', 'plugins', 'elementor', 'assets', 'lib', 'font-awesome', 'webfonts')
+        ];
+
+        fontSources.forEach(srcDir => {
+          if (existsSync(srcDir)) {
+            cpSync(srcDir, distAssets, { recursive: true, force: true });
+            cpSync(srcDir, distWebfonts, { recursive: true, force: true });
+          }
+        });
       },
     },
   ],

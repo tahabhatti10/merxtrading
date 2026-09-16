@@ -348,16 +348,18 @@ header.elementor-location-header {
     width: 100% !important;
     box-shadow: 0 2px 10px rgba(0,0,0,0.06) !important;
 }
-header .elementor-element-817879a {
-    display: flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    position: relative !important;
-    padding: 12px 40px !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    max-width: 1300px !important;
-    margin: 0 auto !important;
+@media (min-width: 1025px) {
+    header .elementor-element-817879a {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: relative !important;
+        padding: 12px 40px !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        max-width: 1300px !important;
+        margin: 0 auto !important;
+    }
 }
 header .elementor-element-da1f82d {
     display: flex !important;
@@ -518,32 +520,31 @@ header .elementor-element-64dc08d .the7-logo-wrap img {
     max-height: 52px !important;
     object-fit: contain !important;
 }
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     header .elementor-element-15d07bb,
-    header .elementor-element-817879a {
+    header .elementor-element-817879a,
+    header .the7-e-sticky-spacer,
+    header .sticky-spacer {
         display: none !important;
         visibility: hidden !important;
         height: 0 !important;
         min-height: 0 !important;
         max-height: 0 !important;
         overflow: hidden !important;
-    }
-    header .elementor-element-25340b6.the7-e-sticky-spacer {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        border: none !important;
     }
     header .elementor-element-25340b6 {
         display: flex !important;
         visibility: visible !important;
-        position: fixed !important;
-        inset: 0 0 auto 0 !important;
+        position: relative !important;
         width: 100% !important;
         min-height: 60px !important;
         height: 60px !important;
         transform: none !important;
-        z-index: 99999 !important;
     }
+}
     header .elementor-element-64dc08d .the7-logo-wrap img {
         width: 72px !important;
         height: 48px !important;

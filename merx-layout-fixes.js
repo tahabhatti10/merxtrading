@@ -82,4 +82,63 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+
+    // --------------------------------------------------------------------------
+    // Mobile Navigation Drawer (.elementor-4761)
+    // --------------------------------------------------------------------------
+    var navPopup = document.querySelector('.elementor-4761.elementor-location-popup');
+    var navModal;
+
+    if (navPopup) {
+        navModal = document.createElement('div');
+        navModal.className = 'merx-mobile-nav-modal';
+        navModal.setAttribute('aria-hidden', 'true');
+        navModal.appendChild(navPopup);
+        document.body.appendChild(navModal);
+
+        var navCloseBtn = document.createElement('button');
+        navCloseBtn.type = 'button';
+        navCloseBtn.className = 'merx-mobile-nav-close';
+        navCloseBtn.setAttribute('aria-label', 'Close menu');
+        navCloseBtn.innerHTML = '&times;';
+        navPopup.insertBefore(navCloseBtn, navPopup.firstChild);
+
+        function openNavModal() {
+            navModal.classList.add('is-open');
+            navModal.setAttribute('aria-hidden', 'false');
+            document.body.classList.add('merx-mobile-nav-open');
+        }
+
+        function closeNavModal() {
+            navModal.classList.remove('is-open');
+            navModal.setAttribute('aria-hidden', 'true');
+            document.body.classList.remove('merx-mobile-nav-open');
+        }
+
+        document.addEventListener('click', function (event) {
+            var hamburger = event.target.closest('.elementor-element-ae41305 a, a[href*="4761"]');
+            if (hamburger) {
+                event.preventDefault();
+                event.stopPropagation();
+                openNavModal();
+                return;
+            }
+
+            if (event.target === navModal || event.target === navCloseBtn || event.target.closest('.merx-mobile-nav-close')) {
+                event.preventDefault();
+                closeNavModal();
+                return;
+            }
+
+            if (navModal.classList.contains('is-open') && event.target.closest('.merx-mobile-nav-modal .dt-nav-menu a, .merx-mobile-nav-modal .box-button')) {
+                closeNavModal();
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && navModal.classList.contains('is-open')) {
+                closeNavModal();
+            }
+        });
+    }
 });
