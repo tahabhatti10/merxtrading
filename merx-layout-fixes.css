@@ -1,0 +1,597 @@
+/* ==========================================================================
+   MERX THEME & LAYOUT OVERRIDES (GOLDEN-YELLOW PALETTE)
+   ========================================================================== */
+
+:root {
+    --merx-gold: #C58B10;
+    --merx-gold-light: #D49B15;
+    --merx-gold-deep: #B07804;
+    --merx-gold-dark: #784E00;
+    --merx-gold-tint: rgba(197, 139, 16, 0.12);
+    --merx-gold-tint-hover: rgba(197, 139, 16, 0.22);
+    --merx-gold-border: rgba(197, 139, 16, 0.3);
+    --merx-dark-contrast: #1A1A1A;
+    --merx-white: #FFFFFF;
+    --the7-accent-color: #C58B10;
+    --the7-accent-bg-color: #C58B10;
+    --the7-accent-color-hover: #784E00;
+    --the7-base-color: #C58B10;
+    --the7-btn-bg-color: #C58B10;
+    --the7-btn-border-color: #C58B10;
+    --the7-btn-color: #FFFFFF;
+    --the7-btn-hover-bg-color: #1A1A1A;
+    --the7-btn-hover-color: #FFFFFF;
+}
+
+/* --------------------------------------------------------------------------
+   1. TOP NAVIGATION BAR (ORIGINAL STYLE RESTORED WITH GOLD COLOR CHANGE)
+   -------------------------------------------------------------------------- */
+
+/* Header remains clean white with subtle bottom border/shadow */
+header.elementor-location-header {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 99999 !important;
+    width: 100% !important;
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Suppress generated sticky duplicates */
+header.elementor-location-header > .elementor-element-15d07bb,
+header.elementor-location-header .the7-e-sticky-spacer,
+header.elementor-location-header .sticky-spacer,
+.the7-e-sticky-spacer,
+.sticky-spacer,
+.elementor-element-817879a.the7-e-sticky-spacer,
+.elementor-element-817879a.sticky-spacer {
+    display: none !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+}
+
+header.elementor-location-header > .elementor-element-817879a:not(.sticky-spacer):not(.the7-e-sticky-spacer) {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    width: 100% !important;
+    max-width: 1300px !important;
+    min-height: 100px !important;
+    margin: 0 auto !important;
+    padding: 10px 40px !important;
+    box-sizing: border-box !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
+    transform: none !important;
+    animation: none !important;
+}
+
+header.elementor-location-header > .elementor-element-817879a > .elementor-element-da1f82d,
+header.elementor-location-header > .elementor-element-817879a > .elementor-element-b8a4c33 {
+    display: flex !important;
+    flex: 0 0 180px !important;
+    width: 180px !important;
+    max-width: 180px !important;
+    align-items: center !important;
+}
+
+header.elementor-location-header .elementor-element-817879a .the7-logo-wrap {
+    display: flex !important;
+    align-items: center !important;
+}
+
+header.elementor-location-header .elementor-element-817879a .the7-logo-wrap img {
+    display: block !important;
+    width: 150px !important;
+    max-width: 150px !important;
+    height: 34px !important;
+    max-height: 34px !important;
+    object-fit: contain !important;
+    transform: none !important;
+}
+
+header.elementor-location-header .elementor-element-8340692 {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+header.elementor-location-header .elementor-element-7fe2c68 {
+    display: block !important;
+    width: max-content !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    top: 0 !important;
+    transform: none !important;
+}
+
+header.elementor-location-header .elementor-element-7fe2c68 nav,
+header.elementor-location-header .elementor-element-7fe2c68 nav > ul {
+    height: 70px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+/* Original Nav Menu Text Styling with Gold Accent */
+header.elementor-location-header a,
+header.elementor-location-header .menu-text,
+header.elementor-location-header .item-content {
+    color: #1A1A1A !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    transition: color 0.25s ease !important;
+}
+
+/* Nav Link Hover State */
+header.elementor-location-header .dt-nav-menu-horizontal li > a {
+    padding: 8px 14px !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+header.elementor-location-header .dt-nav-menu-horizontal li:hover > a,
+header.elementor-location-header a:hover,
+header.elementor-location-header .menu-text:hover {
+    color: #C58B10 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+/* Active Nav Menu Item (Top Decoration Line in Golden) */
+header.elementor-location-header .dt-nav-menu-horizontal li.act > a,
+header.elementor-location-header .dt-nav-menu-horizontal li.current-menu-item > a {
+    color: #C58B10 !important;
+    background: transparent !important;
+    background-color: transparent !important;
+}
+
+header.elementor-location-header .dt-nav-menu-horizontal li.act > a .menu-text,
+header.elementor-location-header .dt-nav-menu-horizontal li.current-menu-item > a .menu-text {
+    color: #C58B10 !important;
+}
+
+header.elementor-location-header .dt-nav-menu-horizontal li.act > a::before,
+header.elementor-location-header .dt-nav-menu-horizontal li > a::before {
+    background-color: #C58B10 !important;
+    background: #C58B10 !important;
+    border-color: #C58B10 !important;
+}
+
+/* Header CTA Button ("Get a Quote" on Far Right) */
+header.elementor-location-header .box-button.elementor-button,
+header.elementor-location-header .elementor-button {
+    background-color: #C58B10 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #C58B10 !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    padding: 10px 24px !important;
+    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.28) !important;
+    transition: all 0.3s ease !important;
+}
+
+header.elementor-location-header .box-button.elementor-button:hover,
+header.elementor-location-header .elementor-button:hover {
+    background-color: #1A1A1A !important;
+    border-color: #1A1A1A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+    transform: translateY(-2px);
+}
+
+header.elementor-location-header > .elementor-element-25340b6 {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. CALL-TO-ACTION (CTA) BUTTONS (SOLID GOLDEN-YELLOW, CRISP WHITE TEXT)
+   -------------------------------------------------------------------------- */
+
+.elementor-button,
+.box-button,
+button.elementor-button,
+input[type="submit"].elementor-button,
+.the7-button,
+.wpcf7-submit,
+.elementor-button.elementor-button-link,
+a.box-button {
+    background-color: #C58B10 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #C58B10 !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.25) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.elementor-button .elementor-button-text,
+.elementor-button .elementor-button-icon,
+.box-button span,
+.elementor-button *,
+.box-button * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+/* CTA Buttons Smooth Hover State */
+.elementor-button:hover,
+.elementor-button:focus,
+.box-button:hover,
+.box-button:focus,
+button.elementor-button:hover,
+button.elementor-button:focus,
+input[type="submit"].elementor-button:hover,
+input[type="submit"].elementor-button:focus,
+.the7-button:hover,
+.the7-button:focus,
+.wpcf7-submit:hover,
+.wpcf7-submit:focus,
+a.box-button:hover {
+    background-color: #1A1A1A !important;
+    border-color: #1A1A1A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22) !important;
+    transform: translateY(-2px);
+}
+
+.elementor-button:hover *,
+.elementor-button:focus *,
+.box-button:hover *,
+.box-button:focus * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+/* --------------------------------------------------------------------------
+   2B. "READY WHEN YOU ARE" BUTTON (TASK 2: HIGHLIGHT & SHADOW)
+   -------------------------------------------------------------------------- */
+
+.elementor-element-38a71aa .elementor-button,
+.elementor-element-3d573aa .elementor-button,
+[data-id="38a71aa"] .elementor-button,
+[data-id="3d573aa"] .elementor-button {
+    background-color: #FFFFFF !important;
+    color: #784E00 !important;
+    border: 2px solid #FFFFFF !important;
+    border-radius: 50px !important;
+    font-weight: 700 !important;
+    font-size: 14.5px !important;
+    padding: 14px 30px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.45) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+.elementor-element-38a71aa .elementor-button *,
+.elementor-element-3d573aa .elementor-button *,
+[data-id="38a71aa"] .elementor-button *,
+[data-id="3d573aa"] .elementor-button * {
+    color: #784E00 !important;
+    fill: #784E00 !important;
+}
+
+.elementor-element-38a71aa .elementor-button:hover,
+.elementor-element-3d573aa .elementor-button:hover,
+[data-id="38a71aa"] .elementor-button:hover,
+[data-id="3d573aa"] .elementor-button:hover {
+    background-color: #1A1A1A !important;
+    border-color: #1A1A1A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+    transform: translateY(-2px) !important;
+}
+
+.elementor-element-38a71aa .elementor-button:hover *,
+.elementor-element-3d573aa .elementor-button:hover *,
+[data-id="38a71aa"] .elementor-button:hover *,
+[data-id="3d573aa"] .elementor-button:hover * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. ICONS (TASK 3: REMOVE WEIRD SHAPES, 2PX LARGER)
+   -------------------------------------------------------------------------- */
+
+/* Remove background/border from container wrappers so no weird line appears */
+.elementor-icon-box-icon,
+.elementor-icon-wrapper,
+.the7-icon-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+/* Golden Icons */
+.elementor-icon,
+.the7-icon-wrapper svg,
+.elementor-icon-box-icon svg,
+.elementor-icon-list-icon svg,
+.elementor-icon-list-icon i,
+.elementor-icon-box-icon i,
+.elementor-icon i,
+i.fa,
+i.fas,
+i.far,
+i.fab,
+.scroll-top svg,
+.the7-swiper-button.elementor-icon,
+.e-icon-marked svg {
+    color: #C58B10 !important;
+    fill: #C58B10 !important;
+}
+
+/* Make all icons 2px larger */
+.elementor-icon,
+.elementor-icon-box-icon .elementor-icon {
+    font-size: calc(100% + 2px) !important;
+}
+
+.elementor-icon svg,
+.the7-icon-wrapper svg,
+.elementor-icon-box-icon svg,
+.elementor-icon-list-icon svg,
+.elementor-widget-icon-box .elementor-icon svg {
+    width: calc(1em + 4px) !important;
+    height: calc(1em + 4px) !important;
+    min-width: 22px !important;
+    min-height: 22px !important;
+    transform: scale(1.12);
+}
+
+.scroll-top {
+    background-color: #FFFFFF !important;
+    border: 1px solid rgba(197, 139, 16, 0.3) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
+}
+
+.scroll-top:hover {
+    background-color: #C58B10 !important;
+}
+
+.scroll-top:hover svg {
+    fill: #FFFFFF !important;
+}
+
+/* Rating Stars */
+.elementor-rating-icon,
+.e-icon-marked svg,
+.elementor-star-full svg {
+    fill: #C58B10 !important;
+    color: #C58B10 !important;
+}
+
+/* Only explicit stacked/framed icons keep a background circle */
+.elementor-view-stacked .elementor-icon,
+.elementor-view-framed .elementor-icon {
+    background-color: rgba(197, 139, 16, 0.12) !important;
+    border: 1px solid rgba(197, 139, 16, 0.25) !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. PRODUCT CATALOG CTA BUTTONS (TASK 4: WHOLE BUTTON LIKE HOME SCREEN)
+   -------------------------------------------------------------------------- */
+
+/* Remove any weird outer highlight/glow from popup triggers */
+.elementor-23209 .popup-trigger,
+.popup-trigger,
+.popup-trigger .elementor-button-wrapper {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    filter: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 8px 0 0 0 !important;
+    width: 100% !important;
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+/* Full, solid button matching the home screen */
+.elementor-23209 .popup-trigger .elementor-button,
+.popup-trigger .elementor-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    max-width: 175px !important;
+    padding: 12px 24px !important;
+    border-radius: 50px !important;
+    background-color: #C58B10 !important;
+    border: 1px solid #C58B10 !important;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.35) !important;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+}
+
+.elementor-23209 .popup-trigger .elementor-button *,
+.popup-trigger .elementor-button * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+.elementor-23209 .popup-trigger .elementor-button:hover,
+.popup-trigger .elementor-button:hover {
+    background-color: #1A1A1A !important;
+    border-color: #1A1A1A !important;
+    color: #FFFFFF !important;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+    transform: translateY(-2px) !important;
+}
+
+.elementor-23209 .popup-trigger .elementor-button:hover *,
+.popup-trigger .elementor-button:hover * {
+    color: #FFFFFF !important;
+    fill: #FFFFFF !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. COLOR CONFLICT PREVENTION (NO WHITE/CREAM OVERLAPPING)
+   -------------------------------------------------------------------------- */
+
+.elementor-15902 .elementor-element.elementor-element-6bf2cee,
+.the7-swiper-slide-inner,
+.product,
+.post-type-simple,
+.cart-collaterals {
+    background-color: #FFFFFF !important;
+    border: 1px solid rgba(0, 0, 0, 0.07) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04) !important;
+    border-radius: 12px !important;
+}
+
+.elementor-icon-box-wrapper {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+/* Step Numbers and Accent Highlights */
+.step-number {
+    color: #C58B10 !important;
+    border-color: #C58B10 !important;
+}
+
+a.page-numbers.filter-item.act,
+a.page-numbers.filter-item:hover {
+    color: #C58B10 !important;
+    border: 1px solid #C58B10 !important;
+    background: #FFFFFF !important;
+}
+
+h4.the7-heading-title a:hover,
+.the7-heading-title a:hover {
+    color: #C58B10 !important;
+}
+
+.category-item,
+.category-item .dot,
+.category-item:hover,
+.category-item:hover .dot {
+    color: #C58B10 !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. LAYOUT FIXES & MODAL COMPATIBILITY
+   -------------------------------------------------------------------------- */
+
+.elementor-22469 .elementor-element-7c2023a {
+    position: relative;
+    top: -4px;
+}
+
+.merx-quote-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+}
+
+.merx-quote-modal.is-open {
+    display: flex;
+}
+
+.merx-quote-modal > .elementor-location-popup {
+    display: block !important;
+    width: min(640px, 100%);
+    max-height: 100%;
+    overflow: auto;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.merx-quote-modal-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    z-index: 1;
+    border: 0;
+    padding: 0;
+    background: transparent;
+    color: #1A1A1A;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+}
+
+body.merx-quote-modal-open {
+    overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   7. RESPONSIVE DESIGN (MOBILE & TABLET ADAPTATION)
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+    header.elementor-location-header > .elementor-element-817879a {
+        display: none !important;
+        visibility: hidden !important;
+    }
+
+    header.elementor-location-header > .elementor-element-25340b6 {
+        display: flex !important;
+        visibility: visible !important;
+        position: relative !important;
+        width: 100% !important;
+        min-height: 60px !important;
+        height: 60px !important;
+        padding: 6px 16px !important;
+        box-sizing: border-box !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        background-color: #FFFFFF !important;
+        background: #FFFFFF !important;
+    }
+
+    header.elementor-location-header > .elementor-element-25340b6 .the7-logo-wrap img {
+        display: block !important;
+        width: 72px !important;
+        height: 48px !important;
+        max-width: 72px !important;
+        max-height: 48px !important;
+        object-fit: contain !important;
+    }
+
+    header.elementor-location-header .elementor-element-ae41305 svg path {
+        fill: #1A1A1A !important;
+    }
+}
