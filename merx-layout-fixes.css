@@ -890,13 +890,10 @@ body.merx-mobile-nav-open {
 }
 
 /* ==========================================================================
-   HERO BADGES: STRICT SINGLE-LINE PILL BADGES
+   HERO BADGE: SINGLE-LINE PILL BADGE FOR ABOUT HERO SUBTITLE
    ========================================================================== */
 .elementor-element-59b6aad,
-.elementor-element.elementor-element-59b6aad,
-.hero-title.elementor-widget-heading,
-.hero-section .hero-title,
-.hero-content .hero-title {
+.elementor-element.elementor-element-59b6aad {
     width: auto !important;
     max-width: max-content !important;
     min-width: fit-content !important;
@@ -907,8 +904,7 @@ body.merx-mobile-nav-open {
     padding: 7px 18px !important;
 }
 
-.elementor-element-59b6aad .elementor-heading-title,
-.hero-title.elementor-widget-heading .elementor-heading-title {
+.elementor-element-59b6aad .elementor-heading-title {
     white-space: nowrap !important;
     text-wrap: nowrap !important;
 }
