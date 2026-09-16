@@ -864,29 +864,109 @@ body.merx-mobile-nav-open {
 
 
 /* ==========================================================================
-   BUTTONS: STRICT SINGLE-LINE TEXT ACROSS THE ENTIRE WEBSITE
+   BUTTONS: STRICT SINGLE-LINE TEXT & PERFECT MIDDLE ALIGNMENT
    ========================================================================== */
 .elementor-button,
 .box-button,
 .elementor-button-link,
-.elementor-button-text,
-.elementor-button-content-wrapper,
-.elementor-button-wrapper a,
-.popup-trigger .elementor-button,
+button.elementor-button,
+input[type="submit"].elementor-button,
+.the7-button,
 .the7_button_widget .box-button,
-.elementor-widget-button a {
+.elementor-widget-button a,
+.wpcf7-submit {
     white-space: nowrap !important;
     text-wrap: nowrap !important;
     flex-wrap: nowrap !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    box-sizing: border-box !important;
+    line-height: 1 !important;
 }
 
-.elementor-button-text {
+.elementor-button-content-wrapper,
+.elementor-button .elementor-button-content-wrapper,
+.box-button .elementor-button-content-wrapper {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+    gap: 8px !important;
+    line-height: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-button-text,
+.elementor-button .elementor-button-text,
+.box-button .elementor-button-text {
     white-space: nowrap !important;
     text-wrap: nowrap !important;
-    display: inline-block !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 1.15 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    vertical-align: middle !important;
+}
+
+.elementor-button-icon,
+.elementor-button .elementor-button-icon,
+.box-button .elementor-button-icon {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    line-height: 0 !important;
+    vertical-align: middle !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-shrink: 0 !important;
+}
+
+.elementor-button-icon svg,
+.elementor-button svg,
+.box-button svg {
+    display: block !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+    width: 14px !important;
+    height: 14px !important;
+}
+
+/* ==========================================================================
+   ABOUT PAGE STAT BOXES & COUNTERS ALIGNMENT
+   ========================================================================== */
+.elementor-element-c1b8ca6 .e-con-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: stretch !important;
+    gap: 20px !important;
+    flex-wrap: wrap !important;
+}
+
+.elementor-element-c1b8ca6 .elementor-element-cded331,
+.elementor-element-c1b8ca6 .elementor-element-890d0c9,
+.elementor-element-c1b8ca6 .elementor-element-8d95200 {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 24px 20px !important;
+    border-radius: 12px !important;
+}
+
+.elementor-element-c1b8ca6 .the7-heading-title {
+    text-align: center !important;
+    margin: 0 auto !important;
+    width: 100% !important;
 }
 
 /* ==========================================================================
@@ -910,14 +990,20 @@ body.merx-mobile-nav-open {
 }
 
 /* ==========================================================================
-   REQUEST QUOTE / QUERY PAGE CENTERED HEADER WITHOUT PHOTO
+   REQUEST QUOTE / QUERY PAGE CENTERED HEADER & FORM ALIGNMENT
    ========================================================================== */
 .elementor-20226 .elementor-element-edb8772,
 .elementor-20387 .elementor-element-3edfdaa {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
     justify-content: center !important;
     text-align: center !important;
     padding-top: 40px !important;
     padding-bottom: 20px !important;
+    margin: 0 auto !important;
+    max-width: 850px !important;
+    width: 100% !important;
 }
 
 .elementor-20226 .elementor-element-a287b90,
@@ -927,9 +1013,23 @@ body.merx-mobile-nav-open {
     margin: 0 auto !important;
     text-align: center !important;
     align-items: center !important;
+    justify-content: center !important;
 }
 
 .elementor-20226 .elementor-element-a287b90 .elementor-heading-title,
 .elementor-20387 .elementor-element-4687642 .elementor-heading-title {
     text-align: center !important;
+    width: 100% !important;
 }
+
+/* Form Submit Button Middle Alignment */
+.elementor-form .elementor-button,
+.elementor-button.elementor-size-sm,
+.elementor-button.elementor-size-md,
+.elementor-button.elementor-size-lg {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    vertical-align: middle !important;
+}
+
