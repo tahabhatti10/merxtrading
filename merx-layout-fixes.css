@@ -1,8 +1,16 @@
 /* ==========================================================================
-   MERX THEME & LAYOUT OVERRIDES (GOLDEN-YELLOW PALETTE)
+   MERX THEME & LAYOUT OVERRIDES (DARK BLUE PRIMARY & GOLDEN ACCENTS)
    ========================================================================== */
 
 :root {
+    --merx-primary: #0B1B3D;
+    --merx-primary-light: #162E61;
+    --merx-primary-deep: #061229;
+    --merx-primary-dark: #040C1D;
+    --merx-primary-tint: rgba(11, 27, 61, 0.08);
+    --merx-primary-tint-hover: rgba(11, 27, 61, 0.16);
+    --merx-primary-border: rgba(11, 27, 61, 0.25);
+    
     --merx-gold: #C58B10;
     --merx-gold-light: #D49B15;
     --merx-gold-deep: #B07804;
@@ -10,16 +18,18 @@
     --merx-gold-tint: rgba(197, 139, 16, 0.12);
     --merx-gold-tint-hover: rgba(197, 139, 16, 0.22);
     --merx-gold-border: rgba(197, 139, 16, 0.3);
-    --merx-dark-contrast: #1A1A1A;
+    
+    --merx-dark-contrast: #0B1B3D;
     --merx-white: #FFFFFF;
-    --the7-accent-color: #C58B10;
-    --the7-accent-bg-color: #C58B10;
-    --the7-accent-color-hover: #784E00;
-    --the7-base-color: #C58B10;
-    --the7-btn-bg-color: #C58B10;
-    --the7-btn-border-color: #C58B10;
+    
+    --the7-accent-color: #0B1B3D;
+    --the7-accent-bg-color: #0B1B3D;
+    --the7-accent-color-hover: #C58B10;
+    --the7-base-color: #0B1B3D;
+    --the7-btn-bg-color: #0B1B3D;
+    --the7-btn-border-color: #0B1B3D;
     --the7-btn-color: #FFFFFF;
-    --the7-btn-hover-bg-color: #1A1A1A;
+    --the7-btn-hover-bg-color: #C58B10;
     --the7-btn-hover-color: #FFFFFF;
 }
 
@@ -58,7 +68,7 @@ html, body {
 }
 
 /* --------------------------------------------------------------------------
-   1. TOP NAVIGATION BAR (ORIGINAL STYLE RESTORED WITH GOLD COLOR CHANGE)
+   1. TOP NAVIGATION BAR
    -------------------------------------------------------------------------- */
 
 /* Header remains clean white with subtle bottom border/shadow */
@@ -170,8 +180,24 @@ header.elementor-location-header .sticky-spacer,
     }
 }
 
+/* Nav Link Colors & Hover Effects */
+.main-nav > li > a,
+.dt-nav-menu > li > a {
+    color: #1A1A1A !important;
+    transition: color 0.25s ease !important;
+}
+
+.main-nav > li > a:hover,
+.main-nav > li.act > a,
+.main-nav > li.current-menu-item > a,
+.dt-nav-menu > li > a:hover,
+.dt-nav-menu > li.act > a,
+.dt-nav-menu > li.current-menu-item > a {
+    color: #0B1B3D !important;
+}
+
 /* --------------------------------------------------------------------------
-   2. CALL-TO-ACTION (CTA) BUTTONS (SOLID GOLDEN-YELLOW, CRISP WHITE TEXT)
+   2. CALL-TO-ACTION (CTA) BUTTONS (SOLID DARK BLUE, GOLDEN HOVER)
    -------------------------------------------------------------------------- */
 
 .elementor-button,
@@ -182,13 +208,13 @@ input[type="submit"].elementor-button,
 .wpcf7-submit,
 .elementor-button.elementor-button-link,
 a.box-button {
-    background-color: #C58B10 !important;
+    background-color: #0B1B3D !important;
     color: #FFFFFF !important;
-    border: 1px solid #C58B10 !important;
+    border: 1px solid #0B1B3D !important;
     border-radius: 50px !important;
     font-weight: 600 !important;
     letter-spacing: 0.3px !important;
-    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.25) !important;
+    box-shadow: 0 4px 14px rgba(11, 27, 61, 0.25) !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
     text-decoration: none !important;
     display: inline-flex !important;
@@ -205,7 +231,7 @@ a.box-button {
     fill: #FFFFFF !important;
 }
 
-/* CTA Buttons Smooth Hover State */
+/* CTA Buttons Smooth Golden Hover State */
 .elementor-button:hover,
 .elementor-button:focus,
 .box-button:hover,
@@ -219,10 +245,10 @@ input[type="submit"].elementor-button:focus,
 .wpcf7-submit:hover,
 .wpcf7-submit:focus,
 a.box-button:hover {
-    background-color: #1A1A1A !important;
-    border-color: #1A1A1A !important;
+    background-color: #C58B10 !important;
+    border-color: #C58B10 !important;
     color: #FFFFFF !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.22) !important;
+    box-shadow: 0 6px 20px rgba(197, 139, 16, 0.35) !important;
     transform: translateY(-2px);
 }
 
@@ -235,21 +261,22 @@ a.box-button:hover {
 }
 
 /* --------------------------------------------------------------------------
-   2B. "READY WHEN YOU ARE" BUTTON (TASK 2: HIGHLIGHT & SHADOW)
+   2B. "READY WHEN YOU ARE" BUTTON & BANNER
    -------------------------------------------------------------------------- */
 
 .elementor-element-38a71aa .elementor-button,
 .elementor-element-3d573aa .elementor-button,
 [data-id="38a71aa"] .elementor-button,
-[data-id="3d573aa"] .elementor-button {
+[data-id="3d573aa"] .elementor-button,
+.elementor-element-9333da6 .elementor-button {
     background-color: #FFFFFF !important;
-    color: #784E00 !important;
+    color: #0B1B3D !important;
     border: 2px solid #FFFFFF !important;
     border-radius: 50px !important;
     font-weight: 700 !important;
     font-size: 14.5px !important;
     padding: 14px 30px !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.45) !important;
+    box-shadow: 0 8px 24px rgba(11, 27, 61, 0.3), 0 0 0 3px rgba(255, 255, 255, 0.45) !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -260,32 +287,41 @@ a.box-button:hover {
 .elementor-element-38a71aa .elementor-button *,
 .elementor-element-3d573aa .elementor-button *,
 [data-id="38a71aa"] .elementor-button *,
-[data-id="3d573aa"] .elementor-button * {
-    color: #784E00 !important;
-    fill: #784E00 !important;
+[data-id="3d573aa"] .elementor-button *,
+.elementor-element-9333da6 .elementor-button * {
+    color: #0B1B3D !important;
+    fill: #0B1B3D !important;
 }
 
 .elementor-element-38a71aa .elementor-button:hover,
 .elementor-element-3d573aa .elementor-button:hover,
 [data-id="38a71aa"] .elementor-button:hover,
-[data-id="3d573aa"] .elementor-button:hover {
-    background-color: #1A1A1A !important;
-    border-color: #1A1A1A !important;
+[data-id="3d573aa"] .elementor-button:hover,
+.elementor-element-9333da6 .elementor-button:hover {
+    background-color: #C58B10 !important;
+    border-color: #C58B10 !important;
     color: #FFFFFF !important;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45) !important;
+    box-shadow: 0 10px 30px rgba(197, 139, 16, 0.45) !important;
     transform: translateY(-2px) !important;
 }
 
 .elementor-element-38a71aa .elementor-button:hover *,
 .elementor-element-3d573aa .elementor-button:hover *,
 [data-id="38a71aa"] .elementor-button:hover *,
-[data-id="3d573aa"] .elementor-button:hover * {
+[data-id="3d573aa"] .elementor-button:hover *,
+.elementor-element-9333da6 .elementor-button:hover * {
     color: #FFFFFF !important;
     fill: #FFFFFF !important;
 }
 
+/* Ready When You Are CTA Section Container */
+.elementor-element-5ca4b68,
+.elementor-element-5ca4b68:not(.elementor-motion-effects-element-type-background) {
+    background-color: #0B1B3D !important;
+}
+
 /* --------------------------------------------------------------------------
-   3. ICONS (TASK 3: REMOVE WEIRD SHAPES, 2PX LARGER)
+   3. ICONS (DARK BLUE ICONS, 2PX LARGER)
    -------------------------------------------------------------------------- */
 
 /* Remove background/border from container wrappers so no weird line appears */
@@ -299,7 +335,7 @@ a.box-button:hover {
     box-shadow: none !important;
 }
 
-/* Golden Icons */
+/* Dark Blue Icons */
 .elementor-icon,
 .the7-icon-wrapper svg,
 .elementor-icon-box-icon svg,
@@ -314,8 +350,8 @@ i.fab,
 .scroll-top svg,
 .the7-swiper-button.elementor-icon,
 .e-icon-marked svg {
-    color: #C58B10 !important;
-    fill: #C58B10 !important;
+    color: #0B1B3D !important;
+    fill: #0B1B3D !important;
 }
 
 /* Make all icons 2px larger */
@@ -338,12 +374,12 @@ i.fab,
 
 .scroll-top {
     background-color: #FFFFFF !important;
-    border: 1px solid rgba(197, 139, 16, 0.3) !important;
+    border: 1px solid rgba(11, 27, 61, 0.25) !important;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1) !important;
 }
 
 .scroll-top:hover {
-    background-color: #C58B10 !important;
+    background-color: #0B1B3D !important;
 }
 
 .scroll-top:hover svg {
@@ -354,21 +390,21 @@ i.fab,
 .elementor-rating-icon,
 .e-icon-marked svg,
 .elementor-star-full svg {
-    fill: #C58B10 !important;
-    color: #C58B10 !important;
+    fill: #0B1B3D !important;
+    color: #0B1B3D !important;
 }
 
 /* Only explicit stacked/framed icons keep a background circle */
 .elementor-view-stacked .elementor-icon,
 .elementor-view-framed .elementor-icon {
-    background-color: rgba(197, 139, 16, 0.12) !important;
-    border: 1px solid rgba(197, 139, 16, 0.25) !important;
+    background-color: rgba(11, 27, 61, 0.08) !important;
+    border: 1px solid rgba(11, 27, 61, 0.2) !important;
     border-radius: 50% !important;
     transition: all 0.3s ease !important;
 }
 
 /* --------------------------------------------------------------------------
-   4. PRODUCT CATALOG CTA BUTTONS (TASK 4: WHOLE BUTTON LIKE HOME SCREEN)
+   4. PRODUCT CATALOG CTA BUTTONS (DARK BLUE MATCHING THE THEME)
    -------------------------------------------------------------------------- */
 
 /* Remove any weird outer highlight/glow from popup triggers */
@@ -398,13 +434,13 @@ i.fab,
     max-width: 175px !important;
     padding: 12px 24px !important;
     border-radius: 50px !important;
-    background-color: #C58B10 !important;
-    border: 1px solid #C58B10 !important;
+    background-color: #0B1B3D !important;
+    border: 1px solid #0B1B3D !important;
     color: #FFFFFF !important;
     font-size: 14px !important;
     font-weight: 700 !important;
     letter-spacing: 0.3px !important;
-    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.35) !important;
+    box-shadow: 0 4px 14px rgba(11, 27, 61, 0.3) !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
     text-decoration: none !important;
     cursor: pointer !important;
@@ -418,10 +454,10 @@ i.fab,
 
 .elementor-23209 .popup-trigger .elementor-button:hover,
 .popup-trigger .elementor-button:hover {
-    background-color: #1A1A1A !important;
-    border-color: #1A1A1A !important;
+    background-color: #C58B10 !important;
+    border-color: #C58B10 !important;
     color: #FFFFFF !important;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25) !important;
+    box-shadow: 0 6px 20px rgba(197, 139, 16, 0.35) !important;
     transform: translateY(-2px) !important;
 }
 
@@ -432,7 +468,7 @@ i.fab,
 }
 
 /* --------------------------------------------------------------------------
-   5. COLOR CONFLICT PREVENTION (NO WHITE/CREAM OVERLAPPING)
+   5. COLOR CONFLICT PREVENTION & CARD HIGHLIGHTS
    -------------------------------------------------------------------------- */
 
 .elementor-15902 .elementor-element.elementor-element-6bf2cee,
@@ -451,16 +487,16 @@ i.fab,
     border-radius: 8px;
 }
 
-/* Step Numbers and Accent Highlights */
+/* Step Numbers, Accents & Section Badges */
 .step-number {
-    color: #C58B10 !important;
-    border-color: #C58B10 !important;
+    color: #0B1B3D !important;
+    border-color: #0B1B3D !important;
 }
 
 a.page-numbers.filter-item.act,
 a.page-numbers.filter-item:hover {
-    color: #C58B10 !important;
-    border: 1px solid #C58B10 !important;
+    color: #0B1B3D !important;
+    border: 1px solid #0B1B3D !important;
     background: #FFFFFF !important;
 }
 
@@ -470,10 +506,24 @@ h4.the7-heading-title a:hover,
 }
 
 .category-item,
-.category-item .dot,
+.category-item .dot {
+    color: #0B1B3D !important;
+}
+
 .category-item:hover,
 .category-item:hover .dot {
     color: #C58B10 !important;
+}
+
+/* Subtitles, section headings, and category titles */
+.elementor-element-336892c .elementor-heading-title,
+.elementor-element-183e3e6 .elementor-heading-title,
+.elementor-element-4f10ae2 .elementor-heading-title {
+    color: #0B1B3D !important;
+}
+
+.elementor-element-4f10ae2 {
+    background-color: rgba(11, 27, 61, 0.08) !important;
 }
 
 /* --------------------------------------------------------------------------
@@ -518,10 +568,15 @@ h4.the7-heading-title a:hover,
     border: 0;
     padding: 0;
     background: transparent;
-    color: #1A1A1A;
+    color: #0B1B3D;
     font-size: 30px;
     line-height: 1;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.merx-quote-modal-close:hover {
+    color: #C58B10;
 }
 
 body.merx-quote-modal-open {
@@ -623,7 +678,7 @@ body.merx-quote-modal-open {
     }
 
     header.elementor-location-header .elementor-element-ae41305 svg path {
-        fill: #1A1A1A !important;
+        fill: #0B1B3D !important;
     }
 }
 
@@ -679,8 +734,8 @@ body.merx-quote-modal-open {
     height: 36px;
     border: none;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.06);
-    color: #1A1A1A;
+    background: rgba(11, 27, 61, 0.08);
+    color: #0B1B3D;
     font-size: 26px;
     line-height: 36px;
     text-align: center;
@@ -693,7 +748,7 @@ body.merx-quote-modal-open {
 }
 
 .merx-mobile-nav-close:hover {
-    background: #C58B10;
+    background: #0B1B3D;
     color: #FFFFFF;
     transform: scale(1.08);
 }
@@ -742,8 +797,8 @@ body.merx-mobile-nav-open {
 .merx-mobile-nav-modal .dt-nav-menu > li > a:hover,
 .merx-mobile-nav-modal .dt-nav-menu > li.act > a,
 .merx-mobile-nav-modal .dt-nav-menu > li.current-menu-item > a {
-    color: #C58B10 !important;
-    background: rgba(197, 139, 16, 0.08) !important;
+    color: #0B1B3D !important;
+    background: rgba(11, 27, 61, 0.08) !important;
 }
 
 .merx-mobile-nav-modal .next-level-button {
@@ -758,16 +813,16 @@ body.merx-mobile-nav-open {
     display: block !important;
     text-align: center !important;
     width: 100% !important;
-    background-color: #C58B10 !important;
+    background-color: #0B1B3D !important;
     color: #FFFFFF !important;
     border-radius: 50px !important;
     padding: 12px 20px !important;
     font-weight: 700 !important;
     text-decoration: none !important;
-    box-shadow: 0 4px 14px rgba(197, 139, 16, 0.28) !important;
+    box-shadow: 0 4px 14px rgba(11, 27, 61, 0.28) !important;
     transition: background 0.2s ease !important;
 }
 
 .merx-mobile-nav-modal .elementor-element-c9cd08a .box-button:hover {
-    background-color: #1A1A1A !important;
+    background-color: #C58B10 !important;
 }

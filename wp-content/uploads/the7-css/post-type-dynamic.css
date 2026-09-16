@@ -1,9 +1,9 @@
 ﻿.accent-bg-mixin {
   color: #fff;
-  background-color: #C58B10;
+  background-color: #0B1B3D;
 }
 .accent-gradient .accent-bg-mixin {
-  background: #C58B10;
+  background: #0B1B3D;
   background: -webkit-linear-gradient();
   background: linear-gradient();
 }
@@ -90,7 +90,7 @@
 .dt-team-shortcode .team-author p {
   font: normal  500  / 1.6em "Montserrat", Helvetica, Arial, Verdana, sans-serif;
   text-transform: none;
-  color: #C58B10;
+  color: #0B1B3D;
 }
 .accent-gradient .dt-team-shortcode .team-author p {
   background: -webkit-linear-gradient();
@@ -100,7 +100,7 @@
 }
 @media all and (-ms-high-contrast: none) {
   .accent-gradient .dt-team-shortcode .team-author p {
-    color: #C58B10;
+    color: #0B1B3D;
   }
 }
 .dt-mega-parent .sidebar-content .widget .team-author p {
@@ -139,7 +139,7 @@
   font-size: 30px;
   line-height: 1.5em;
   font-weight: normal;
-  color: #C58B10;
+  color: #0B1B3D;
 }
 .accent-gradient .dt-testimonials-shortcode .testimonial-vcard .text-secondary {
   background: -webkit-linear-gradient();
@@ -149,11 +149,11 @@
 }
 @media all and (-ms-high-contrast: none) {
   .accent-gradient .dt-testimonials-shortcode .testimonial-vcard .text-secondary {
-    color: #C58B10;
+    color: #0B1B3D;
   }
 }
 .dt-testimonials-shortcode .more-link {
-  color: #C58B10;
+  color: #0B1B3D;
 }
 .testimonial-vcard .text-primary {
   color: #ffffff;
@@ -191,7 +191,7 @@
   font: normal  normal  /  "Montserrat", Helvetica, Arial, Verdana, sans-serif;
 }
 .content .team-author-name a:hover {
-  color: #C58B10;
+  color: #0B1B3D;
 }
 .accent-gradient .content .team-author-name a:hover {
   background: -webkit-linear-gradient();
@@ -201,7 +201,7 @@
 }
 @media all and (-ms-high-contrast: none) {
   .accent-gradient .content .team-author-name a:hover {
-    color: #C58B10;
+    color: #0B1B3D;
   }
 }
 .widget .team-author-name,
@@ -281,7 +281,7 @@
 }
 #main-slideshow .progress-spinner-left,
 #main-slideshow .progress-spinner-right {
-  border-color: #C58B10 !important;
+  border-color: #0B1B3D !important;
 }
 .slider-content .owl-dot:not(.active):not(:hover),
 .slider-content .owl-dot:not(.active):hover {

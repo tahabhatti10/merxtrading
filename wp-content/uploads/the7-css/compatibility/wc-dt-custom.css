@@ -2626,7 +2626,7 @@ a.wc-ico-cart:hover {
   padding: 1px;
   min-width: 14px;
   min-height: 14px;
-  background-color: #C58B10;
+  background-color: #0B1B3D;
   text-align: center;
   font-size: 8px;
   font-family: Tahoma, Arial, sans-serif !important;
@@ -2714,21 +2714,21 @@ a.wc-ico-cart:hover {
   color: #fff;
 }
 .wc-ico-cart > .counter.custom-bg {
-  background-color: #C58B10 !important;
+  background-color: #0B1B3D !important;
   background-image: none !important;
 }
 .wc-ico-cart > .counter.custom-bg:before {
-  border-right-color: #C58B10;
+  border-right-color: #0B1B3D;
 }
 .accent-gradient .wc-ico-cart > .counter,
 .accent-gradient .wc-ico-cart > .counter.gradient-bg,
 .wc-ico-cart > .counter.gradient-bg {
-  background: #C58B10;
+  background: #0B1B3D;
 }
 .accent-gradient .wc-ico-cart > .counter:before,
 .accent-gradient .wc-ico-cart > .counter.gradient-bg:before,
 .wc-ico-cart > .counter.gradient-bg:before {
-  border-right-color: #C58B10;
+  border-right-color: #0B1B3D;
 }
 #top-bar .wc-ico-cart:hover .counter {
   text-decoration: none;
