@@ -10,7 +10,7 @@
     --merx-primary-tint: rgba(11, 27, 61, 0.08);
     --merx-primary-tint-hover: rgba(11, 27, 61, 0.16);
     --merx-primary-border: rgba(11, 27, 61, 0.25);
-    
+
     --merx-gold: #C58B10;
     --merx-gold-light: #D49B15;
     --merx-gold-deep: #B07804;
@@ -18,10 +18,10 @@
     --merx-gold-tint: rgba(197, 139, 16, 0.12);
     --merx-gold-tint-hover: rgba(197, 139, 16, 0.22);
     --merx-gold-border: rgba(197, 139, 16, 0.3);
-    
+
     --merx-dark-contrast: #0B1B3D;
     --merx-white: #FFFFFF;
-    
+
     --the7-accent-color: #0B1B3D;
     --the7-accent-bg-color: #0B1B3D;
     --the7-accent-color-hover: #C58B10;
@@ -34,7 +34,8 @@
 }
 
 /* Global Viewport & Horizontal Overflow Guard */
-html, body {
+html,
+body {
     overflow-x: hidden !important;
     max-width: 100% !important;
 }
@@ -43,7 +44,7 @@ html, body {
 @font-face {
     font-family: 'icomoon-the7-font';
     src: url('/wp-content/themes/dt-the7/fonts/icomoon-the7-font/icomoon-the7-font.woff?wi57p5') format('woff'),
-         url('/wp-content/themes/dt-the7/fonts/icomoon-the7-font/icomoon-the7-font.ttf?wi57p5') format('truetype');
+        url('/wp-content/themes/dt-the7/fonts/icomoon-the7-font/icomoon-the7-font.ttf?wi57p5') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -53,8 +54,8 @@ html, body {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     src: url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff2') format('woff2'),
-         url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff') format('woff'),
-         url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf') format('truetype');
+        url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.woff') format('woff'),
+        url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -62,8 +63,8 @@ html, body {
     font-family: 'Font Awesome 5 Brands';
     font-weight: 400;
     src: url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff2') format('woff2'),
-         url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff') format('woff'),
-         url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf') format('truetype');
+        url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.woff') format('woff'),
+        url('/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.ttf') format('truetype');
     font-display: swap;
 }
 
@@ -87,7 +88,7 @@ header.elementor-location-header {
 }
 
 /* Suppress generated sticky duplicates */
-header.elementor-location-header > .elementor-element-15d07bb,
+header.elementor-location-header>.elementor-element-15d07bb,
 header.elementor-location-header .the7-e-sticky-spacer,
 header.elementor-location-header .sticky-spacer,
 .the7-e-sticky-spacer,
@@ -105,7 +106,7 @@ header.elementor-location-header .sticky-spacer,
 }
 
 @media (min-width: 1025px) {
-    header.elementor-location-header > .elementor-element-817879a:not(.sticky-spacer):not(.the7-e-sticky-spacer) {
+    header.elementor-location-header>.elementor-element-817879a:not(.sticky-spacer):not(.the7-e-sticky-spacer) {
         display: flex !important;
         visibility: visible !important;
         opacity: 1 !important;
@@ -125,8 +126,8 @@ header.elementor-location-header .sticky-spacer,
         animation: none !important;
     }
 
-    header.elementor-location-header > .elementor-element-817879a > .elementor-element-da1f82d,
-    header.elementor-location-header > .elementor-element-817879a > .elementor-element-b8a4c33 {
+    header.elementor-location-header>.elementor-element-817879a>.elementor-element-da1f82d,
+    header.elementor-location-header>.elementor-element-817879a>.elementor-element-b8a4c33 {
         display: flex !important;
         flex: 0 0 180px !important;
         width: 180px !important;
@@ -172,7 +173,7 @@ header.elementor-location-header .sticky-spacer,
 
     header.elementor-location-header .elementor-element-7fe2c68 .horizontal-menu-wrap,
     header.elementor-location-header .elementor-element-7fe2c68 nav,
-    header.elementor-location-header .elementor-element-7fe2c68 nav > ul {
+    header.elementor-location-header .elementor-element-7fe2c68 nav>ul {
         height: 90px !important;
         margin: 0 auto !important;
         display: flex !important;
@@ -180,14 +181,14 @@ header.elementor-location-header .sticky-spacer,
         align-items: center !important;
     }
 
-    header.elementor-location-header .dt-nav-menu-horizontal > li {
+    header.elementor-location-header .dt-nav-menu-horizontal>li {
         height: 90px !important;
         display: flex !important;
         align-items: center !important;
         justify-content: center !important;
     }
 
-    header.elementor-location-header .dt-nav-menu-horizontal > li > a {
+    header.elementor-location-header .dt-nav-menu-horizontal>li>a {
         height: 90px !important;
         display: flex !important;
         align-items: center !important;
@@ -197,7 +198,7 @@ header.elementor-location-header .sticky-spacer,
     }
 
     /* Fixed top line decoration animation positioned flush at top edge of header bar */
-    header.elementor-location-header .dt-nav-menu-horizontal > li > a:after {
+    header.elementor-location-header .dt-nav-menu-horizontal>li>a:after {
         content: "" !important;
         position: absolute !important;
         top: 0 !important;
@@ -211,9 +212,9 @@ header.elementor-location-header .sticky-spacer,
         z-index: 10 !important;
     }
 
-    header.elementor-location-header .dt-nav-menu-horizontal > li.act > a:after,
-    header.elementor-location-header .dt-nav-menu-horizontal > li.current-menu-item > a:after,
-    header.elementor-location-header .dt-nav-menu-horizontal > li:hover > a:after {
+    header.elementor-location-header .dt-nav-menu-horizontal>li.act>a:after,
+    header.elementor-location-header .dt-nav-menu-horizontal>li.current-menu-item>a:after,
+    header.elementor-location-header .dt-nav-menu-horizontal>li:hover>a:after {
         width: 100% !important;
     }
 
@@ -586,7 +587,7 @@ h4.the7-heading-title a:hover,
     display: flex;
 }
 
-.merx-quote-modal > .elementor-location-popup {
+.merx-quote-modal>.elementor-location-popup {
     display: block !important;
     width: min(640px, 100%);
     max-height: 100%;
@@ -811,13 +812,13 @@ body.merx-mobile-nav-open {
     gap: 4px !important;
 }
 
-.merx-mobile-nav-modal .dt-nav-menu > li {
+.merx-mobile-nav-modal .dt-nav-menu>li {
     list-style: none !important;
     padding: 0 !important;
     margin: 0 !important;
 }
 
-.merx-mobile-nav-modal .dt-nav-menu > li > a {
+.merx-mobile-nav-modal .dt-nav-menu>li>a {
     display: flex !important;
     align-items: center !important;
     font-size: 16px !important;
@@ -829,9 +830,9 @@ body.merx-mobile-nav-open {
     transition: background 0.2s ease, color 0.2s ease !important;
 }
 
-.merx-mobile-nav-modal .dt-nav-menu > li > a:hover,
-.merx-mobile-nav-modal .dt-nav-menu > li.act > a,
-.merx-mobile-nav-modal .dt-nav-menu > li.current-menu-item > a {
+.merx-mobile-nav-modal .dt-nav-menu>li>a:hover,
+.merx-mobile-nav-modal .dt-nav-menu>li.act>a,
+.merx-mobile-nav-modal .dt-nav-menu>li.current-menu-item>a {
     color: #0B1B3D !important;
     background: rgba(11, 27, 61, 0.08) !important;
 }
@@ -1032,4 +1033,3 @@ input[type="submit"].elementor-button,
     justify-content: center !important;
     vertical-align: middle !important;
 }
-
