@@ -67,16 +67,19 @@ html, body {
     font-display: swap;
 }
 
+
 /* --------------------------------------------------------------------------
-   1. TOP NAVIGATION BAR
+   1. TOP NAVIGATION BAR & TAB SELECTION ANIMATION LINE FIX
    -------------------------------------------------------------------------- */
 
-/* Header remains clean white with subtle bottom border/shadow */
+/* Header container */
 header.elementor-location-header {
     position: sticky !important;
     top: 0 !important;
     z-index: 99999 !important;
     width: 100% !important;
+    height: 90px !important;
+    min-height: 90px !important;
     background-color: #FFFFFF !important;
     background: #FFFFFF !important;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06) !important;
@@ -109,9 +112,10 @@ header.elementor-location-header .sticky-spacer,
         position: relative !important;
         width: 100% !important;
         max-width: 1300px !important;
-        min-height: 100px !important;
+        height: 90px !important;
+        min-height: 90px !important;
         margin: 0 auto !important;
-        padding: 10px 40px !important;
+        padding: 0 40px !important;
         box-sizing: border-box !important;
         align-items: center !important;
         justify-content: space-between !important;
@@ -127,6 +131,7 @@ header.elementor-location-header .sticky-spacer,
         flex: 0 0 180px !important;
         width: 180px !important;
         max-width: 180px !important;
+        height: 90px !important;
         align-items: center !important;
     }
 
@@ -149,6 +154,7 @@ header.elementor-location-header .sticky-spacer,
         display: flex !important;
         flex: 1 1 auto !important;
         min-width: 0 !important;
+        height: 90px !important;
         justify-content: center !important;
         align-items: center !important;
     }
@@ -157,18 +163,63 @@ header.elementor-location-header .sticky-spacer,
         display: block !important;
         width: max-content !important;
         max-width: 100% !important;
+        height: 90px !important;
         margin: 0 auto !important;
         position: relative !important;
         top: 0 !important;
         transform: none !important;
     }
 
+    header.elementor-location-header .elementor-element-7fe2c68 .horizontal-menu-wrap,
     header.elementor-location-header .elementor-element-7fe2c68 nav,
     header.elementor-location-header .elementor-element-7fe2c68 nav > ul {
-        height: 70px !important;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        height: 90px !important;
+        margin: 0 auto !important;
+        display: flex !important;
         justify-content: center !important;
+        align-items: center !important;
+    }
+
+    header.elementor-location-header .dt-nav-menu-horizontal > li {
+        height: 90px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    header.elementor-location-header .dt-nav-menu-horizontal > li > a {
+        height: 90px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        position: relative !important;
+        padding: 0 16px !important;
+    }
+
+    /* Fixed top line decoration animation positioned flush at top edge of header bar */
+    header.elementor-location-header .dt-nav-menu-horizontal > li > a:after {
+        content: "" !important;
+        position: absolute !important;
+        top: 0 !important;
+        bottom: auto !important;
+        left: 0 !important;
+        width: 0% !important;
+        height: 3px !important;
+        background: #0B1B3D !important;
+        border-radius: 0 0 2px 2px !important;
+        transition: width 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+        z-index: 10 !important;
+    }
+
+    header.elementor-location-header .dt-nav-menu-horizontal > li.act > a:after,
+    header.elementor-location-header .dt-nav-menu-horizontal > li.current-menu-item > a:after,
+    header.elementor-location-header .dt-nav-menu-horizontal > li:hover > a:after {
+        width: 100% !important;
+    }
+
+    header.elementor-location-header .elementor-element-403745c {
+        display: flex !important;
+        height: 90px !important;
         align-items: center !important;
     }
 
@@ -178,22 +229,6 @@ header.elementor-location-header .sticky-spacer,
         height: 0 !important;
         overflow: hidden !important;
     }
-}
-
-/* Nav Link Colors & Hover Effects */
-.main-nav > li > a,
-.dt-nav-menu > li > a {
-    color: #1A1A1A !important;
-    transition: color 0.25s ease !important;
-}
-
-.main-nav > li > a:hover,
-.main-nav > li.act > a,
-.main-nav > li.current-menu-item > a,
-.dt-nav-menu > li > a:hover,
-.dt-nav-menu > li.act > a,
-.dt-nav-menu > li.current-menu-item > a {
-    color: #0B1B3D !important;
 }
 
 /* --------------------------------------------------------------------------
