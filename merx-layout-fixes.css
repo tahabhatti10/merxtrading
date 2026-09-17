@@ -127,26 +127,34 @@ header.elementor-location-header .sticky-spacer,
     }
 
     header.elementor-location-header>.elementor-element-817879a>.elementor-element-da1f82d,
-    header.elementor-location-header>.elementor-element-817879a>.elementor-element-b8a4c33 {
+    header.elementor-location-header>.elementor-element-817879a>.elementor-element-b8a4c33,
+    header.elementor-location-header .elementor-element-da1f82d,
+    header.elementor-location-header .elementor-element-b8a4c33 {
         display: flex !important;
-        flex: 0 0 180px !important;
-        width: 180px !important;
-        max-width: 180px !important;
+        flex: 0 0 auto !important;
+        width: auto !important;
+        max-width: 295px !important;
         height: 90px !important;
         align-items: center !important;
     }
 
-    header.elementor-location-header .elementor-element-817879a .the7-logo-wrap {
+    header.elementor-location-header .elementor-element-817879a .the7-logo-wrap,
+    header.elementor-location-header .elementor-element-da1f82d .the7-logo-wrap,
+    header.elementor-location-header .elementor-element-b8a4c33 .the7-logo-wrap {
         display: flex !important;
         align-items: center !important;
     }
 
-    header.elementor-location-header .elementor-element-817879a .the7-logo-wrap img {
+    header.elementor-location-header .elementor-element-817879a .the7-logo-wrap img,
+    header.elementor-location-header .elementor-element-da1f82d .the7-logo-wrap img,
+    header.elementor-location-header .elementor-element-b8a4c33 .the7-logo-wrap img,
+    header.elementor-location-header .elementor-element-da1f82d img,
+    header.elementor-location-header .elementor-element-b8a4c33 img {
         display: block !important;
-        width: 150px !important;
-        max-width: 150px !important;
-        height: 34px !important;
-        max-height: 34px !important;
+        width: auto !important;
+        max-width: 285px !important;
+        height: 59px !important;
+        max-height: 59px !important;
         object-fit: contain !important;
         transform: none !important;
     }
@@ -371,7 +379,7 @@ a.box-button:hover {
     box-shadow: none !important;
 }
 
-/* Dark Blue Icons */
+/* Base Theme Icons (Dark Blue) */
 .elementor-icon,
 .the7-icon-wrapper svg,
 .elementor-icon-box-icon svg,
@@ -390,24 +398,36 @@ i.fab,
     fill: #0B1B3D !important;
 }
 
-/* Make all icons 2px larger */
-.elementor-icon,
-.elementor-icon-box-icon .elementor-icon {
-    font-size: calc(100% + 2px) !important;
+.elementor-icon svg path,
+.elementor-icon-box-icon svg path,
+.elementor-icon-list-icon svg path,
+.the7-icon-wrapper svg path {
+    fill: currentColor !important;
 }
 
-.elementor-icon svg,
-.the7-icon-wrapper svg,
-.elementor-icon-box-icon svg,
-.elementor-icon-list-icon svg,
+/* Feature & Icon-Box Icons */
+.elementor-widget-icon .elementor-icon svg,
 .elementor-widget-icon-box .elementor-icon svg {
-    width: calc(1em + 4px) !important;
-    height: calc(1em + 4px) !important;
-    min-width: 22px !important;
-    min-height: 22px !important;
-    transform: scale(1.12);
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 28px !important;
+    min-height: 28px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
 }
 
+/* List Item Icons */
+.elementor-icon-list-icon svg,
+.elementor-icon-list-icon i {
+    width: 16px !important;
+    height: 16px !important;
+    min-width: 16px !important;
+    min-height: 16px !important;
+    display: inline-block !important;
+    vertical-align: middle !important;
+}
+
+/* Scroll To Top Button */
 .scroll-top {
     background-color: #FFFFFF !important;
     border: 1px solid rgba(11, 27, 61, 0.25) !important;
@@ -418,6 +438,10 @@ i.fab,
     background-color: #0B1B3D !important;
 }
 
+.scroll-top svg {
+    fill: #0B1B3D !important;
+}
+
 .scroll-top:hover svg {
     fill: #FFFFFF !important;
 }
@@ -426,8 +450,8 @@ i.fab,
 .elementor-rating-icon,
 .e-icon-marked svg,
 .elementor-star-full svg {
-    fill: #0B1B3D !important;
-    color: #0B1B3D !important;
+    fill: #C58B10 !important;
+    color: #C58B10 !important;
 }
 
 /* Only explicit stacked/framed icons keep a background circle */
@@ -1032,4 +1056,116 @@ input[type="submit"].elementor-button,
     align-items: center !important;
     justify-content: center !important;
     vertical-align: middle !important;
+}
+
+/* ==========================================================================
+   HOME HERO RESPONSIVE SPACING (WITHOUT IMAGE CARDS)
+   ========================================================================== */
+.elementor-22209 .elementor-element.elementor-element-209d397 {
+    padding-bottom: 48px !important;
+}
+
+@media (max-width: 767px) {
+    .elementor-22209 .elementor-element.elementor-element-209d397 {
+        padding-bottom: 32px !important;
+    }
+}
+
+/* ==========================================================================
+   FOOTER / DOCK ICON STYLES (PURE WHITE ICONS)
+   ========================================================================== */
+footer.elementor-location-footer .the7-icon-wrapper a.elementor-icon svg,
+footer.elementor-location-footer .elementor-widget-the7_icon_widget .elementor-icon svg,
+footer.elementor-location-footer .the7-icon-wrapper a.elementor-icon i,
+footer.elementor-location-footer .elementor-widget-the7_icon_widget .elementor-icon i,
+footer.elementor-location-footer svg path,
+.elementor-752 .the7-icon-wrapper a.elementor-icon svg,
+.elementor-752 .elementor-widget-the7_icon_widget .elementor-icon svg,
+.elementor-752 .the7-icon-wrapper a.elementor-icon i,
+.elementor-752 .elementor-widget-the7_icon_widget .elementor-icon i,
+.elementor-752 svg path {
+    fill: #FFFFFF !important;
+    color: #FFFFFF !important;
+}
+
+footer.elementor-location-footer .the7-icon-wrapper a.elementor-icon:hover svg,
+footer.elementor-location-footer .elementor-widget-the7_icon_widget .elementor-icon:hover svg,
+footer.elementor-location-footer .the7-icon-wrapper a.elementor-icon:hover i,
+footer.elementor-location-footer .elementor-widget-the7_icon_widget .elementor-icon:hover i,
+footer.elementor-location-footer a:hover svg path,
+.elementor-752 .the7-icon-wrapper a.elementor-icon:hover svg,
+.elementor-752 .elementor-widget-the7_icon_widget .elementor-icon:hover svg,
+.elementor-752 .the7-icon-wrapper a.elementor-icon:hover i,
+.elementor-752 .elementor-widget-the7_icon_widget .elementor-icon:hover i,
+.elementor-752 a:hover svg path {
+    fill: #D1D5DB !important;
+    color: #D1D5DB !important;
+}
+
+/* ==========================================================================
+   MOBILE VIEWPORT ENHANCEMENTS & OVERFLOW PREVENTION (<= 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden !important;
+        width: 100% !important;
+        max-width: 100vw !important;
+    }
+
+    /* Container padding adjustments */
+    .elementor-section.elementor-section-boxed > .elementor-container,
+    .e-con-boxed > .e-con-inner {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Responsive Headings */
+    h1.elementor-heading-title,
+    .elementor-widget-heading h1 {
+        font-size: clamp(26px, 7vw, 36px) !important;
+        line-height: 1.25 !important;
+    }
+
+    h2.elementor-heading-title,
+    .elementor-widget-heading h2 {
+        font-size: clamp(22px, 5.5vw, 28px) !important;
+        line-height: 1.3 !important;
+    }
+
+    h3.elementor-heading-title,
+    .elementor-widget-heading h3 {
+        font-size: clamp(18px, 4.5vw, 22px) !important;
+        line-height: 1.35 !important;
+    }
+
+    /* Contact Page Cards on Mobile */
+    .elementor-element-a11f5b2,
+    .elementor-element-10c75dd {
+        flex-direction: column !important;
+        gap: 16px !important;
+    }
+
+    .elementor-element-d04fd90,
+    .elementor-element-facebaa,
+    .elementor-element-93887c6 {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Form Fields & Submit on Mobile */
+    .elementor-form input,
+    .elementor-form textarea,
+    .elementor-form select {
+        font-size: 16px !important; /* Prevents auto-zoom on iOS */
+    }
+
+    /* Buttons flex cleanly on mobile */
+    .elementor-button,
+    .box-button,
+    .the7-button {
+        max-width: 100% !important;
+    }
 }
