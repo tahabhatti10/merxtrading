@@ -96,6 +96,18 @@ document.addEventListener('DOMContentLoaded', function () {
         navModal.appendChild(navPopup);
         document.body.appendChild(navModal);
 
+        function keepNavPopupInDrawer() {
+            if (navPopup.parentElement !== navModal) {
+                navModal.appendChild(navPopup);
+            }
+        }
+
+        var navPopupObserver = new MutationObserver(keepNavPopupInDrawer);
+        navPopupObserver.observe(document.body, { childList: true, subtree: true });
+        window.setTimeout(keepNavPopupInDrawer, 0);
+        window.setTimeout(keepNavPopupInDrawer, 250);
+        window.setTimeout(keepNavPopupInDrawer, 1000);
+
         var navCloseBtn = document.createElement('button');
         navCloseBtn.type = 'button';
         navCloseBtn.className = 'merx-mobile-nav-close';
