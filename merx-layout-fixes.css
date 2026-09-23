@@ -869,6 +869,21 @@ body.merx-mobile-nav-open {
     transform: translateY(-57px);
 }
 
+/* Give the desktop navbar logo 25px more vertical space. */
+@media (min-width: 1025px) {
+    header.elementor-location-header .elementor-element-da1f82d,
+    header.elementor-location-header .elementor-element-b8a4c33 {
+        max-width: 310px !important;
+    }
+
+    header.elementor-location-header .elementor-element-da1f82d .the7-logo-wrap img,
+    header.elementor-location-header .elementor-element-b8a4c33 .the7-logo-wrap img {
+        height: 75px !important;
+        max-width: 310px !important;
+        max-height: 75px !important;
+    }
+}
+
 .merx-mobile-nav-modal .elementor-element-c9cd08a {
     transform: translateY(-109px);
 }
